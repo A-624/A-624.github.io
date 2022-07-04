@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next muse use-motion" lang="ch-zhan">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -80,11 +80,11 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Ann-Blog">
 <meta property="og:url" content="http://example.com/archives/2022/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="Ann-Blog">
+<meta property="og:locale">
+<meta property="article:author" content="A-624">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,7 +121,7 @@
 
 
 
-  <title>Archive | Hexo</title>
+  <title>Archive | Ann-Blog</title>
   
 
 
@@ -133,7 +133,7 @@
 
 <meta name="generator" content="Hexo 6.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ch-zhan">
 
   
   
@@ -151,7 +151,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Ann-Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -370,7 +370,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">A-624</span>
 
   
 </div>
@@ -410,41 +410,49 @@
 
     
 
-
-    
-
-  <script src="/js/wobblewindow.js"></script>
-  <script>
+   
+   
+      <script src="/js/wobblewindow.js"></script>
+      <script>
     //只在桌面版网页启用特效
-    if( window.innerWidth > 768  ){
-      $(document).ready(function () {
-        
-          $('#header').wobbleWindow({
-            radius: 65,
-            movementTop: false,
-            movementLeft: false,
-            movementRight: false,
-            debug: false,
-          });
-        
+           if( window.innerWidth > 768  ){
+              $(document).ready(function () {
+               
+               $('#header').wobbleWindow({
+                  radius: 100,
+                  movementTop: false,
+                  movementLeft: false,
+                  movementRight: false,
+                  debug: false,
+                 });
+              
 
-        
+              
+                  $('#sidebar').wobbleWindow({
+                  radius: 100,
+                 movementLeft: false,
+                     movementTop: false,
+                    movementBottom: false,
+                    position: 'fixed',
+                     debug: false,
+                     });
+              
 
-        
-          $('#footer').wobbleWindow({
-            radius: 65,
-            movementBottom: false,
-            movementLeft: false,
-            movementRight: false,
-            offsetX: ,
-            position: 'absolute',
-            debug: false,
-          });
-        
-      });
-    }
-  </script>
-
+             
+                    $('#footer').wobbleWindow({
+                    radius: 100,
+                    movementBottom: false,
+                    movementLeft: false,
+                    movementRight: false,
+                     offsetX: ,
+                   position: 'absolute',
+                    debug: false,
+                 });
+             
+            });
+           }
+         </script>
+       
 
   </div>
   
@@ -583,6 +591,17 @@
   
 
   
+
+
+     
+
+
+
+
+
+
+
+
 
 </body>
 </html>
