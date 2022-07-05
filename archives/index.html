@@ -5,7 +5,49 @@
   
 
 
-<html class="theme-next muse use-motion" lang="ch-zhan">
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+          $('#header').wobbleWindow({
+            radius: 65,
+            movementTop: false,
+            movementLeft: false,
+            movementRight: false,
+            debug: false,
+          });
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 65,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+          $('#footer').wobbleWindow({
+            radius: 65,
+            movementBottom: false,
+            movementLeft: false,
+            movementRight: false,
+            offsetX: ,
+            position: 'absolute',
+            debug: false,
+          });
+        
+      });
+    }
+  </script>
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,6 +84,38 @@
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -83,8 +157,8 @@
 <meta property="og:title" content="Ann-Blog">
 <meta property="og:url" content="http://example.com/archives/index.html">
 <meta property="og:site_name" content="Ann-Blog">
-<meta property="og:locale">
-<meta property="article:author" content="A-624">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Anns">
 <meta name="twitter:card" content="summary">
 
 
@@ -133,7 +207,7 @@
 
 <meta name="generator" content="Hexo 6.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="ch-zhan">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -182,6 +256,36 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
           </a>
         </li>
       
@@ -340,8 +444,30 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/A-624" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ajw0822@mail.ustc.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
           
 
           
@@ -370,21 +496,15 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">A-624</span>
+  <span class="author" itemprop="copyrightHolder">Anns</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
@@ -410,50 +530,7 @@
 
     
 
-   
-   
-      <script src="/js/wobblewindow.js"></script>
-      <script>
-    //只在桌面版网页启用特效
-           if( window.innerWidth > 768  ){
-              $(document).ready(function () {
-               
-               $('#header').wobbleWindow({
-                  radius: 100,
-                  movementTop: false,
-                  movementLeft: false,
-                  movementRight: false,
-                  debug: false,
-                 });
-              
-
-              
-                  $('#sidebar').wobbleWindow({
-                  radius: 100,
-                 movementLeft: false,
-                     movementTop: false,
-                    movementBottom: false,
-                    position: 'fixed',
-                     debug: false,
-                     });
-              
-
-             
-                    $('#footer').wobbleWindow({
-                    radius: 100,
-                    movementBottom: false,
-                    movementLeft: false,
-                    movementRight: false,
-                     offsetX: ,
-                   position: 'absolute',
-                    debug: false,
-                 });
-             
-            });
-           }
-         </script>
-       
-
+    
   </div>
   
 
@@ -592,16 +669,7 @@
 
   
 
-
+  {% include '_custum/custom.swig'} 
      
-
-
-
-
-
-
-
-
-
 </body>
 </html>
